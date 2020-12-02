@@ -12,6 +12,6 @@
 /captures
 .externalNativeBuild
 git add .
-git remote add origin https://github.com/sonudabhade/sonali.git
+git remote add origin https://gitlab.com/sonudabhade1/android_project.git
 git commit - m "My First Android Commit"
 git push -u origin master
