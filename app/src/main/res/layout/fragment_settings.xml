@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_20"
+    tools:context=".Fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontsize_medium" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logout_red" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/colorText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/languages"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <RelativeLayout
+            android:id="@+id/rel_language"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/editext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_toLeftOf="@+id/iv_view_spinner_currency"
+                android:background="@android:color/transparent"
+                android:duplicateParentState="true" />
+
+            <View
+                android:id="@+id/iv_view_spinner_language"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_marginBottom="@dimen/margin_3"
+                android:layout_toLeftOf="@+id/iv_drop_down_language"
+                android:background="@color/colorTextHint"
+                android:duplicateParentState="true" />
+
+            <ImageView
+                android:id="@+id/iv_drop_down_language"
+                android:layout_width="@dimen/margin_30"
+                android:layout_height="@dimen/margin_30"
+                android:layout_alignParentEnd="true"
+                android:duplicateParentState="true"
+                android:padding="@dimen/margin_5"
+                android:src="@drawable/down_arrow_gray" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ProgressBarCategoryFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loader" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

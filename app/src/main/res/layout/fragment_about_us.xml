@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
+            android:id="@+id/txt_data_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/fontsize_12"
+            android:textSize="@dimen/fontsize_14" />
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loader" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

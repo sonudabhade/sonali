@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_shadow_with_white_background"
+        android:paddingTop="@dimen/margin_6"
+        android:paddingBottom="@dimen/margin_6"
+        android:paddingStart="@dimen/margin_10"
+        android:paddingEnd="@dimen/margin_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mini rice mill machine"
+                android:textColor="@color/colorOTPText"
+                android:textSize="@dimen/fontsize_16"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="@dimen/margin_5"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Required Quantity : 4"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/fontsize_14"
+                android:layout_marginTop="@dimen/margin_3"/>
+
+            <TextView
+                android:id="@+id/tv_lead_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lead ID - TGL021565"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/fontsize_12"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_price_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Range : 20,000 to 30,000"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/fontsize_14"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_toLeftOf="@+id/tv_date"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="@dimen/margin_5"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25-05-2019 11:45 AM"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/fontsize_12"
+                android:layout_marginTop="@dimen/margin_3"
+              />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5">
+
+            <TextView
+                android:id="@+id/tv_waiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_waiting_for_response"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/fontsize_12"
+                android:textColor="@color/colorOrange"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_buy_lead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingStart="@dimen/margin_15"
+                android:paddingEnd="@dimen/margin_15"
+                android:background="@drawable/bg_very_dark_blue_color_with_corner"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fontsize_12"
+                    android:textColor="@color/colorWhite"
+                    android:text="View Details"
+                    android:duplicateParentState="true"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

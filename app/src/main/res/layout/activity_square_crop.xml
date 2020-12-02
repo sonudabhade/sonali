@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.SquareCropActivity">
+
+
+    <com.theartofdev.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_crop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        custom:cropShape="rectangle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_with_corner_and_yellow_bg"
+            android:text="@string/lbl_done"
+            android:textColor="@color/colorBlack"
+
+            android:textSize="@dimen/fontsize_normal" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_with_corner_and_yellow_bg"
+            android:text="@string/lbl_cancel"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_normal"
+            />
+    </LinearLayout>
+
+</LinearLayout>

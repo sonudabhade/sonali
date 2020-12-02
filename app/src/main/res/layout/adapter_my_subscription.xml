@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_update_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_very_dark_blue_color_with_corner"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_one"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_15">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TradeGenie Free Subscription"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_transact_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontsize_12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_2"
+                    android:background="#7ADDD4D4"
+                    android:layout_marginTop="@dimen/margin_8"/>
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:text="Start Date - 12/03/2019"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/margin_8"/>
+
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:text="Exp Date - 25/04/2019"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/margin_5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    android:background="@drawable/bg_circle_one"
+                    android:padding="@dimen/margin_5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_circle_white"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorOTPText"
+                            android:textSize="@dimen/fontsize_16"
+                            android:text="@string/free"
+                            android:textStyle="bold"/>
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorOTPText"
+                            android:textSize="@dimen/margin_10"
+                            android:text="1 Month"
+                            />-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_view_details"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontsize_16"
+                android:text="View Details"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/margin_10"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorTextHint"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"/>
+
+            <TextView
+                android:id="@+id/tv_upgrade"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontsize_16"
+                android:text="@string/lbl_upgrade"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/margin_10"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

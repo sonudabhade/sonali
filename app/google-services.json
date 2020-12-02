@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "378553994340",
+    "firebase_url": "https://trade-genie-2e11e.firebaseio.com",
+    "project_id": "trade-genie-2e11e",
+    "storage_bucket": "trade-genie-2e11e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378553994340:android:4b93d05a918bf08f",
+        "android_client_info": {
+          "package_name": "com.tradegenie.android.tradegenieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378553994340-imnh7fthhjs6eigr3uu38de68qf8vq38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradegenie.android.tradegenieapp",
+            "certificate_hash": "2cd64690c281c4f8fd5f7c8d1799161c09157390"
+          }
+        },
+        {
+          "client_id": "378553994340-2rf2p31lf8apdim62086pe47avffjnum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpIIb-SJ0OrpB14uYtNvnCRML2ia4tkHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378553994340-2rf2p31lf8apdim62086pe47avffjnum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

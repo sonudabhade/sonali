@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:text="@string/video_link"
+                android:textColor="@color/colorText"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30"
+                android:background="@drawable/editext_background"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10">
+
+                <EditText
+                    android:id="@+id/edt_video_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_toLeftOf="@+id/iv_view"
+                    android:inputType="text"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:paddingLeft="@dimen/margin_6"
+                    android:paddingTop="@dimen/margin_3"
+                    android:paddingBottom="@dimen/margin_3"
+                    android:paddingRight="@dimen/margin_6"
+                    android:paddingStart="@dimen/margin_6"
+                    android:hint="Eg.https://youtu.be/lyRPyRKHO8M"
+                    android:textColor="@color/colorText"
+                    android:background="@android:color/transparent" />
+
+                <View
+                    android:id="@+id/iv_view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:layout_marginBottom="@dimen/margin_3"
+                    android:layout_toLeftOf="@+id/iv_video_link"
+                    android:background="@color/colorTextHint" />
+
+                <ImageView
+                    android:id="@+id/iv_video_link"
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/ic_password_view" />
+
+            </RelativeLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE:-"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Enter URL in this format https://www.youtube.com/watch?v=lyRPyRKHO8M"
+                    android:textColor="@color/colorTextHint" />
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/btn_submit_video_link"
+                android:layout_width="@dimen/margin_100"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_button_with_corner_and_yellow_bg"
+                android:text="@string/p_submit"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fontsize_12"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/document"
+                android:textColor="@color/colorText"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_upload_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_button_with_five_dp_corner_and_yellow_bg"
+                android:gravity="center"
+                android:padding="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingStart="@dimen/margin_20"
+                android:paddingEnd="@dimen/margin_20">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_add_black"
+                    android:duplicateParentState="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:text="@string/add_document"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:duplicateParentState="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_document"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_100"
+                android:layout_marginTop="@dimen/margin_10">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_previous"
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/left_arrow"
+                        android:layout_marginStart="@dimen/margin_10"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_add_document"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/img_next"
+                        android:layout_toRightOf="@+id/img_previous"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_marginEnd="@dimen/margin_5">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                    <ImageView
+                        android:id="@+id/img_next"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/right_arrow"
+                        android:layout_marginEnd="@dimen/margin_10"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTabBackground"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/certification"
+                android:textColor="@color/colorText"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_new_certificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_button_with_five_dp_corner_and_yellow_bg"
+                android:gravity="center"
+                android:padding="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingStart="@dimen/margin_20"
+                android:paddingEnd="@dimen/margin_20">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_add_black"
+                    android:duplicateParentState="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_new"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fontsize_normal"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:duplicateParentState="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_100"
+                android:layout_marginTop="@dimen/margin_10">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_previous_certificate"
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/left_arrow"
+                        android:layout_marginStart="@dimen/margin_10"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_add_document_certificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/img_next_certificate"
+                        android:layout_toRightOf="@+id/img_previous_certificate"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_marginEnd="@dimen/margin_5">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                    <ImageView
+                        android:id="@+id/img_next_certificate"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_width="@dimen/margin_12"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/right_arrow"
+                        android:layout_marginEnd="@dimen/margin_10"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_button_with_corner_and_yellow_bg"
+                android:text="@string/p_submit"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayoutOtherDetails"
+        android:background="@android:color/transparent"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:src="@drawable/loader"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

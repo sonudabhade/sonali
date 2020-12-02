@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/bg_white_background_with_corner">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_this_seller"
+            android:textSize="@dimen/fontsize_20"
+            android:layout_gravity="center"
+            android:textColor="@color/colorOTPText"
+            android:layout_marginTop="@dimen/fontsize_20"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="?android:attr/ratingBarStyle"
+            android:isIndicator="false"
+            android:stepSize="1"
+            android:layout_marginTop="@dimen/margin_15"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginVertical="@dimen/margin_15"
+            android:background="@drawable/bg_button_with_corner_and_yellow_bg"
+            android:text="@string/p_submit"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

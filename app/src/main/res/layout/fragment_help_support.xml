@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.HelpSupportFragment">
+
+    <LinearLayout
+        android:id="@+id/Lnr_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_about_us_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/about_us"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_privacy_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_help_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/help_support"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lnr_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      android:visibility="gone">
+        <TextView
+            android:id="@+id/txt_about_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/about_us"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_privacy_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_help_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/help_support"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lnr_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      android:visibility="gone" >
+        <TextView
+            android:id="@+id/txt_about_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/about_us"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+
+
+
+        <TextView
+            android:id="@+id/txt_privacy_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+        <TextView
+            android:id="@+id/txt_help_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/help_support"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/Lnr_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_privacy_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Privacy Policy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_help_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/help_support"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_about_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="About Us"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lnr_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_help_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="@string/help_support"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_about_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="About Us"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/txt_privacy_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Privacy Policy"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/fontsize_medium"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>-->
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+</LinearLayout>

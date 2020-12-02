@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tradegenie.android.tradegenieapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".Activity.PaymentForSubscriptionActivity"></activity>
+        <activity android:name=".Activity.PaymentForUpgradeActivity"></activity>
+        <activity android:name=".Activity.PaymentForNewLeadActivity"></activity>
+        <activity android:name=".Activity.PaymentForNewTenderActivity"></activity>
+        <activity android:name=".Activity.TermsAndConditionsActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- Firebase Notifications -->
+        <service android:name=".Utility.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Utility.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <activity
+            android:name=".Activity.OtpVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".Activity.SignUpOrSignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".Activity.YoutubeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SquareCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SquareCropBorcherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!-- RazorPay Payment Integration API Key -->
+        <!-- rzp_live_buH0OoUtkxSM8a -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_buH0OoUtkxSM8a" />
+<!--            android:value="CyUJg1XjAoumWq" />-->
+        <!--            android:value="rzp_test_W1JxHizMUja8RX" />-->
+    </application>
+
+</manifest>

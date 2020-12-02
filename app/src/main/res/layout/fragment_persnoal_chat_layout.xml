@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/chat_background"
+  >
+
+    <LinearLayout
+        android:id="@+id/maintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow_with_white_background"
+            android:padding="@dimen/margin_15"
+            android:layout_marginBottom="@dimen/margin_5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_60"
+                android:id="@+id/teacher_profile_student_personal_chat"
+                android:layout_centerVertical="true"
+                app:civ_border_width="@dimen/margin_2"
+                android:src="@drawable/default_user_profile"
+                app:civ_border_color="@color/colorTextHint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/teacher_profile_student_personal_chat"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginRight="@dimen/margin_10"
+                android:id="@+id/linerLayout_teacherInfo_Adapter_TeacherList"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/tv_buyer_name"
+                    android:textSize="@dimen/fontsize_18" />
+
+                <LinearLayout
+                    android:id="@id/linear_layout_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_toLeftOf="@+id/linear_layout_use_type">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_call_black" />
+
+                    <TextView
+                        android:id="@+id/tv_buyer_mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/fontsize_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/linear_layout_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_toLeftOf="@+id/linear_layout_use_type">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location_black" />
+
+                    <TextView
+                        android:id="@+id/tv_buyer_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/fontsize_12" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_chat_send_container"
+        android:layout_below="@+id/maintoolbar"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/chat_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_chat_send_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:background="@drawable/bg_shadow_with_white_background"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+
+
+        <EditText
+            android:id="@+id/chat_input_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/type_here"
+            android:maxLines="5"
+            android:textSize="13sp" />
+
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/gray_btn_bg_color"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"/>
+
+
+        <ImageView
+            android:id="@+id/imgsend"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_30"
+            android:layout_gravity="center"
+            android:src="@drawable/send_message"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:padding="@dimen/margin_5"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutChatPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loader" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

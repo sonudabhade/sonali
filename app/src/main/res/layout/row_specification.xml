@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:duplicateParentState="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rel_attribute_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_30"
+                    android:background="@drawable/editext_background"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:duplicateParentState="true">
+
+                    <Spinner
+                        android:id="@+id/spinner_attribute_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginEnd="@dimen/margin_5"
+                        android:layout_toLeftOf="@+id/iv_view_specification"
+                        android:background="@android:color/transparent"
+                        android:duplicateParentState="true"/>
+
+                    <View
+                        android:id="@+id/iv_view_specification"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:layout_marginBottom="@dimen/margin_3"
+                        android:layout_toLeftOf="@+id/iv_drop_down_specification"
+                        android:background="@color/colorTextHint"
+                        android:duplicateParentState="true"/>
+
+                    <ImageView
+                        android:id="@+id/iv_drop_down_specification"
+                        android:layout_width="@dimen/margin_30"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/margin_5"
+                        android:src="@drawable/down_arrow_gray"
+                        android:duplicateParentState="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:text="Eg. Size"
+                    android:textSize="@dimen/fontsize_12"
+                    android:textColor="@color/colorText"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_4"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30"
+                android:background="@drawable/editext_background"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_toLeftOf="@+id/iv_view"
+                    android:background="@android:color/transparent" />
+
+                <View
+                    android:id="@+id/iv_view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:layout_marginBottom="@dimen/margin_3"
+                    android:layout_toLeftOf="@+id/iv_drop_down"
+                    android:background="@color/colorTextHint" />
+
+                <ImageView
+                    android:id="@+id/iv_drop_down"
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/down_arrow_gray" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_specification"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_10">
+
+            <EditText
+                android:id="@+id/edt_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30"
+                android:background="@drawable/editext_background"
+                android:textSize="@dimen/fontsize_normal"
+                android:textColor="@color/text_color"
+                android:paddingLeft="@dimen/margin_6"
+                android:paddingTop="@dimen/margin_3"
+                android:paddingBottom="@dimen/margin_3"
+                android:paddingRight="@dimen/margin_6"
+                android:hint="@string/value"
+                android:inputType="text"
+                android:duplicateParentState="true"/>
+
+            <TextView
+                android:text="Eg. 12"
+                android:textSize="@dimen/fontsize_12"
+                android:textColor="@color/colorText"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_10">
+
+            <RelativeLayout
+                android:id="@+id/rel_attribute_type_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_30"
+                android:background="@drawable/editext_background"
+                android:orientation="horizontal"
+                android:duplicateParentState="true">
+
+                <Spinner
+                    android:id="@+id/spinner_attribute_type_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_toLeftOf="@+id/iv_view_specification_three"
+                    android:background="@android:color/transparent"
+                    android:duplicateParentState="true"/>
+
+                <View
+                    android:id="@+id/iv_view_specification_three"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:layout_marginBottom="@dimen/margin_3"
+                    android:layout_toLeftOf="@+id/iv_drop_down_specification_three"
+                    android:background="@color/colorTextHint"
+                    android:duplicateParentState="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_drop_down_specification_three"
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/down_arrow_gray"
+                    android:duplicateParentState="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="Eg. Kg"
+                android:textSize="@dimen/fontsize_12"
+                android:textColor="@color/colorText"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="@dimen/margin_25"
+                android:layout_height="@dimen/margin_25"
+                android:src="@drawable/delete"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_only_shadow_with_white_background"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_lead_subscription"
+                    android:text="Order ID - 25554454644768"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/fontsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_lead_subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:text="Subscription"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/fontsize_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/lbl_payment_type"
+                    android:text="Jan 03,2018 10:15 AM"
+                    android:textColor="@color/colorTextHint"
+                    android:textSize="@dimen/fontsize_14" />
+
+                <TextView
+                    android:id="@+id/lbl_payment_type"
+                    android:textColor="@color/colorTextHint"
+                    android:textSize="@dimen/fontsize_14"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lbl_total_amount"
+                        android:textColor="@color/colorTextHint"
+                        android:textSize="@dimen/fontsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:text="₹ 3030"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/margin_20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lbl_transaction_id"
+                        android:textColor="@color/colorTextHint"
+                        android:textSize="@dimen/fontsize_14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_transaction_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:gravity="center"
+                            android:text="15416464564"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/fontsize_16" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.34"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/Lnr_download_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_button_with_corner_and_sky_blue_bg"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/margin_5"
+                            android:paddingTop="@dimen/margin_5"
+                            android:paddingEnd="@dimen/margin_5"
+                            android:paddingBottom="@dimen/margin_5"
+                            android:text="@string/download_invoice"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/margin_10" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

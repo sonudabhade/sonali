@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/bg_shadow_with_white_background"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/iv_product_image"
+                    android:layout_width="@dimen/margin_100"
+                    android:layout_height="@dimen/margin_100"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_document" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/fontsize_16"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_shop_name" />
+
+                        <TextView
+                            android:id="@+id/tv_company_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/fontsize_normal" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_location_black" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/margin_10"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/fontsize_normal" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/margin_2"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="₹"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/fontsize_16"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_quantity"
+                            android:textColor="@color/colorText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5"
+                            android:text="*"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edt_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/margin_6"
+                        android:paddingTop="@dimen/margin_3"
+                        android:paddingRight="@dimen/margin_6"
+                        android:paddingBottom="@dimen/margin_3"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/fontsize_normal" />
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view"
+                            android:background="@android:color/transparent" />
+
+                        <View
+                            android:id="@+id/iv_view"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down"
+                            android:background="@color/colorTextHint" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>-->
+                    <!--<EditText
+                        android:id="@+id/edt_p_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unit"
+                            android:textColor="@color/colorText" />
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="@dimen/margin_5"-->
+<!--                            android:text="*"-->
+<!--                            android:textColor="@color/red" />-->
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view_spinner_unit"
+                            android:background="@android:color/transparent"
+                            android:duplicateParentState="true" />
+
+                        <View
+                            android:id="@+id/iv_view_spinner_unit"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down_unit"
+                            android:background="@color/colorTextHint"
+                            android:duplicateParentState="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down_unit"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:duplicateParentState="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>
+                    <!--<EditText
+                        android:id="@+id/edt_p_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal"
+
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currency"
+                        android:textColor="@color/colorText" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_currency"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view_spinner_currency"
+                            android:background="@android:color/transparent"
+                            android:duplicateParentState="true" />
+
+                        <View
+                            android:id="@+id/iv_view_spinner_currency"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down_currency"
+                            android:background="@color/colorTextHint"
+                            android:duplicateParentState="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down_currency"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:duplicateParentState="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view"
+                            android:background="@android:color/transparent" />
+
+                        <View
+                            android:id="@+id/iv_view"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down"
+                            android:background="@color/colorTextHint" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>-->
+                    <!--<EditText
+                        android:id="@+id/edt_p_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type_of_buyer"
+                        android:textColor="@color/colorText" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view_spinner_buyer"
+                            android:background="@android:color/transparent"
+                            android:duplicateParentState="true" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down_buyer"
+                            android:background="@color/colorTextHint"
+                            android:duplicateParentState="true" />
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:duplicateParentState="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>
+                    <!--<EditText
+                        android:id="@+id/edt_p_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_budget_range"
+                        android:textColor="@color/colorText" />
+
+
+                    <EditText
+                        android:id="@+id/edt_from_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:hint="From"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:nextFocusForward="@id/edt_to_price"
+                        android:paddingLeft="@dimen/margin_6"
+                        android:paddingTop="@dimen/margin_3"
+                        android:paddingRight="@dimen/margin_6"
+                        android:paddingBottom="@dimen/margin_3"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/fontsize_normal" />
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view"
+                            android:background="@android:color/transparent" />
+
+                        <View
+                            android:id="@+id/iv_view"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down"
+                            android:background="@color/colorTextHint" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>-->
+                    <!--<EditText
+                        android:id="@+id/edt_p_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText" />
+
+
+                    <EditText
+                        android:id="@+id/edt_to_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:hint="To"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/margin_6"
+                        android:paddingTop="@dimen/margin_3"
+                        android:paddingRight="@dimen/margin_6"
+                        android:paddingBottom="@dimen/margin_3"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/fontsize_normal" />
+
+
+                    <!--<EditText
+                        android:id="@+id/edt_p_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/preferred"
+                            android:textColor="@color/colorText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5"
+                            android:text="*"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_preferred"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_preferred"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view_spinner_preferred"
+                            android:background="@android:color/transparent"
+                            android:duplicateParentState="true" />
+
+                        <View
+                            android:id="@+id/iv_view_spinner_preferred"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down_preferred"
+                            android:background="@color/colorTextHint"
+                            android:duplicateParentState="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down_preferred"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:duplicateParentState="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view"
+                            android:background="@android:color/transparent" />
+
+                        <View
+                            android:id="@+id/iv_view"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down"
+                            android:background="@color/colorTextHint" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>-->
+                    <!--<EditText
+                        android:id="@+id/edt_p_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/type_of_buyer"
+                            android:textColor="@color/colorText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_5"
+                            android:text="*"
+                            android:textColor="@color/red" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_buyer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/editext_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_buyer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_marginEnd="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/iv_view_spinner_buyer"
+                            android:background="@android:color/transparent"
+                            android:duplicateParentState="true" />
+
+                        <View
+                            android:id="@+id/iv_view_spinner_buyer"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_3"
+                            android:layout_marginBottom="@dimen/margin_3"
+                            android:layout_toLeftOf="@+id/iv_drop_down_buyer"
+                            android:background="@color/colorTextHint"
+                            android:duplicateParentState="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_drop_down_buyer"
+                            android:layout_width="@dimen/margin_30"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_alignParentEnd="true"
+                            android:duplicateParentState="true"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/down_arrow_gray" />
+
+                    </RelativeLayout>
+                    <!--<EditText
+                        android:id="@+id/edt_p_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/editext_background"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/colorText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:text="*"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_120"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/editext_background"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine"
+                    android:maxLines="14"
+                    android:paddingLeft="@dimen/margin_6"
+                    android:paddingTop="@dimen/margin_3"
+                    android:paddingRight="@dimen/margin_6"
+                    android:paddingBottom="@dimen/margin_3"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/fontsize_normal" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send_enquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:background="@drawable/bg_button_with_corner_and_yellow_bg"
+                android:text="@string/send_enquiry"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ProgressBarEnquiry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loader" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

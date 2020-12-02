@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_with_white_background"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_6"
+        android:paddingEnd="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_6">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mini rice mill machine"
+            android:textColor="@color/colorOTPText"
+            android:textSize="@dimen/fontsize_16" />
+
+
+        <TextView
+            android:id="@+id/tv_qnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_3"
+            android:text="Required Quantity : 4"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/fontsize_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_price_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_toLeftOf="@+id/tv_date"
+                android:text="Price Range : 20,000 to 30,000"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/fontsize_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:text="25-05-2019 11:45 AM"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/fontsize_12" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_view_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_very_dark_blue_color_with_corner"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_5"
+                android:paddingEnd="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontsize_12" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_3"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:layout_toLeftOf="@+id/linear_layout_view_details"
+                android:text="RamKumar Mishra,Pune,India"
+                android:textColor="@color/colorOTPText"
+                android:textSize="@dimen/fontsize_12"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

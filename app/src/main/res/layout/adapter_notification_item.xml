@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white_with_border_layout"
+        android:padding="@dimen/margin_15"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_alignParentTop="true"
+            android:id="@+id/teacher_profile_ImageView_Adapter_TeacherList"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_notification_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linerLayout_notication_text"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/teacher_profile_ImageView_Adapter_TeacherList"
+            android:layout_marginStart="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/tv_notification_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_subject"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/fontsize_14"
+                android:layout_marginBottom="@dimen/margin_5"/>
+
+            <TextView
+                android:id="@+id/tv_notification_adapter_student_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum is simply dummy text of the print¬ing and typesetting industry. Lorem Ipsum has been the industry's standard"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/fontsize_14"/>
+
+            <TextView
+                android:id="@+id/tv_date_adapter_student_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="25 Oct, 2018 11 27PM"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/fontsize_10"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/margin_5"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

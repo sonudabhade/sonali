@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_shadow_with_white_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/iv_product_image"
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:orientation="vertical"
+                    android:duplicateParentState="true">
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mini rice mill machine"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/fontsize_16"
+                        android:duplicateParentState="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="₹ 2000"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/fontsize_16"
+                        android:duplicateParentState="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_cat_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="@string/lbl_category_sub_category"
+                        android:textColor="@color/colorTextHint"
+                        android:textSize="@dimen/fontsize_normal"
+                        android:duplicateParentState="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTabBackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/Linear_layout_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/edit_icon_gray"
+                        android:duplicateParentState="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_edit"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/fontsize_normal"
+                        android:layout_marginStart="@dimen/margin_8"
+                        android:duplicateParentState="true"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorTabBackground"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginBottom="@dimen/margin_5"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Linear_layout_delete"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/delete_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_delete"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/fontsize_normal"
+                        android:layout_marginStart="@dimen/margin_8"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#005F89</color>
+    <color name="colorAccent">#005F89</color>
+
+    <color name="colorGray">#4f504b</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorText">#4C4C4C</color>
+    <color name="colorTextHint">#8C8C8C</color>
+    <color name="colorOTPText">#005F89</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTabBackground">#F2F2F2</color>
+    <color name="colorYellow">#f7d230</color>
+    <color name="colorSubscription">#E2FF66</color>
+    <color name="ColorGrey">#DFE2E9</color>
+    <color name="colorSlider">#4B6AAD</color>
+    <color name="colorSlider2">#606060</color>
+    <color name="colorVeryDarkBlue">#123744</color>
+    <color name="colorGreen">#479700</color>
+    <color name="colorOrange">#CA7F2E</color>
+    <color name="colorlightblue">#ccd9dc</color>
+    <color name="colorextralightblue">#edf1f2</color>
+    <color name="colorBlue">#52a3d2</color>
+
+
+</resources>

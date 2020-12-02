@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chat_left_msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/left_box"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/margin_20">
+
+            <TextView
+                android:id="@+id/txt_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_linear"
+                android:text="Praise Learning"
+                android:textColor="@color/colorOTPText"
+                android:textSize="@dimen/fontsize_small"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/left_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <!--<TextView
+                    android:id="@+id/chat_left_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:fontFamily="@font/avenir_heavy"
+                    android:text="Amber Shaw"
+                    android:textColor="@color/colorDark"
+                    android:textSize="10sp"/>-->
+
+
+
+                <TextView
+                    android:id="@+id/chat_left_msg_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/fontsize_normal" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_date_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_linear"
+                android:layout_gravity="right|bottom"
+                android:text="25 Oct,2018 11:08 AM"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/fontsize_small"
+                android:layout_marginTop="@dimen/margin_3"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/chat_right_msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/right_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_admin_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_linear"
+                android:text="Praise Learning"
+                android:textColor="@color/colorOTPText"
+                android:textSize="@dimen/fontsize_small"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:id="@+id/chat_right_msg_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/fontsize_normal" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_date_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnr_text"
+                android:gravity="right"
+                android:text="25 Oct,2018 11:08 AM"
+                android:layout_gravity="right|bottom"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/fontsize_small"
+                android:layout_marginTop="@dimen/margin_3"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
